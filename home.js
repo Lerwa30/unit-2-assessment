@@ -52,6 +52,17 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 //CODE HERE
 
 
+const canWeDeliver = (zipCode) => {
+    if(deliveryAreaZipCodes.includes(zipCode) === true) {
+        return 'You are in our delivery zone!'
+    } else {
+        return 'Sorry we do not deliver to that address'
+    }
+}
+
+
+console.log(canWeDeliver(85205))
+
 
 /* 
     Problem 2 Continued
