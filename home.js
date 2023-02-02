@@ -131,6 +131,14 @@ const deals = [
 
 //CODE HERE
 
+// deals.forEach(elem => {
+//     if(elem.title === ('15% Off!')) {
+//         elem.title = ('10% Off!')
+//     }
+// })
+
+deals[0].title = deals[0].title.replace('15', '10')
+ 
 
 
 /*
@@ -147,3 +155,7 @@ const deals = [
 */
 
 //CODE HERE
+
+
+deals[1].desc = deals[1].desc.trim().replace('March', 'April')
+  console.log(deals)

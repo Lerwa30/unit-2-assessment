@@ -32,6 +32,15 @@
 
 //CODE HERE
 
+const pizza = {
+    name: 'rays special',
+    price: 20,
+    category: 'entree',
+    popularity: 1,
+    rating: 4.8,
+    tags: ['large', 'pepperoni', 'extra cheese']
+}
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -44,6 +53,8 @@
 
 //CODE HERE
 
+console.log(pizza.popularity);
+
 
 /*
     Second, log the second tag in your pizza's
@@ -53,6 +64,8 @@
 */
 
 //CODE HERE
+
+console.log(pizza.tags[1]);
 
 
 /*
@@ -64,6 +77,9 @@
 
 //CODE HERE
 
+const {price: pizzaPrice} = pizza
+console.log(pizzaPrice);
+
 
 /*
     Fourth, and last, destructure the category
@@ -73,6 +89,9 @@
 */
 
 //CODE HERE
+
+const {category: pizzaCategory} = pizza;
+console.log(pizzaCategory);
 
 
 //////////////////PROBLEM 3////////////////////
@@ -88,6 +107,49 @@
 */
 
 //CODE HERE
+
+const foodArr = [
+    {
+        name: 'cheese burger',
+        price: 8,
+        category: 'fast food',
+        popularity: 1,
+        rating: 4.8,
+        tags: ['quick', 'double', 'extra cheese']
+    },
+    {
+        name: 'tacos',
+        price: 10,
+        category: 'entree',
+        popularity: 2,
+        rating: 4.5,
+        tags: ['tortilla', 'steak', 'chicken']
+    },
+    {
+        name: 'pizza',
+        price: 15,
+        category: 'entree',
+        popularity: 3,
+        rating: 4,
+        tags: ['large', 'pepperoni', 'extra cheese']
+    },
+    {
+        name: 'fries',
+        price: 6,
+        category: 'side',
+        popularity: 4,
+        rating: 5,
+        tags: ['salty', 'loaded', 'crispy']
+    },
+    {
+        name: 'veggie patty',
+        price: 7,
+        category: 'entree',
+        popularity: 5,
+        rating: 3.8,
+        tags: ['vegan', 'healthy', 'gluten free']
+    }
+]
 
 
 
@@ -105,7 +167,14 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter((food) => {
+    for(let i = 0; i < food.tags.length; i++){
+        if(food.tags[i] === 'salty') {
+            return true
+        }
+    }
+});
+console.log(filteredFood)
 
 
 
