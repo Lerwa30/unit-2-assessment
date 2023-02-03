@@ -219,12 +219,24 @@ console.log(filteredFood)
 
 //CODE HERE
 
+const filterByProperty = foodArr.filter((property, num, type) => {
+    let filteredArr = [];
+    for(let i = 0; i < foodArr.length; i++) {
+        if(type === 'above') {
+            return filteredArr.push(property.num)
+        }
+    }
+    
+})
+
 
 /*
     Invoke the `filterByProperty` function passing
-    in a value for each paramter.
+    in a value for each parameter.
 
     You'll have to console.log to see the filtered array
 */
 
 //CODE HERE
+
+filterByProperty('price', 4, 'above')

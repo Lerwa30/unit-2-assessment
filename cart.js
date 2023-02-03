@@ -59,7 +59,7 @@ const calcFinalPrice = (cartTotal, couponValue, tax) => {
     total = cartTotal - couponValue + (cartTotal * tax)
     return Math.round(total * 100) / 100
 }
-console.log(calcFinalPrice(26.97, 2, .06))
+console.log(calcFinalPrice(26.97, 5, .06))
 
 //////////////////PROBLEM 3////////////////////
 /*  
