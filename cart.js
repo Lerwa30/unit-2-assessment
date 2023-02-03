@@ -84,6 +84,20 @@ console.log(calcFinalPrice(26.97, 5, .06))
 /*
     TEXT ANSWER HERE
 
+    Name - I chose name because a restaurant would need a name for the order which would be a string data type
+
+    Item - item with a string of food is necessary so the restaurant knows what to prepare
+
+    Delivery - I used delivery so the restaurant knows how the customer wants the food and set it to a boolean of true, otherwise if false it would be customer pick up
+
+    Address - would need to be a string since they need that info after delivery was set to true
+
+    Payment- chose this because you would need to pay for the food and set to a string of payment method type
+
+    Tip - entered a tip option at the end for the driver since this customer will pay with a debit card, set that value to a number to show dollar amount in tips
+
+
+
 */
 
 /*
@@ -92,3 +106,13 @@ console.log(calcFinalPrice(26.97, 5, .06))
 */
 
 //CODE HERE
+
+const customer = {
+    name: 'Leroy Pawlick',
+    item: 'pizza',
+    delivery: true,
+    address: '123 Main St',
+    payment: 'debit card',
+    tip: 3
+    
+}
