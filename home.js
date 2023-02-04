@@ -61,7 +61,7 @@ const canWeDeliver = (zipCode) => {
 }
 
 
-console.log(canWeDeliver(85205))
+console.log(canWeDeliver(85203))
 
 
 /* 
@@ -85,15 +85,14 @@ console.log(canWeDeliver(85205))
 
 const canWeDeliverTwo = (zipCode) => {
     for(let i = 0; i < deliveryAreaZipCodes.length; i++) {
-        if(zipCode === deliveryAreaZipCodes[i]) {
-            return 'You are in our delivery zone!'
-        } else {
-            return 'Sorry we do not deliver to that address'
-        }
-    }
+        if(deliveryAreaZipCodes[i] === zipCode) {
+            return 'You are in the delivery zone!'
+        } 
+     }
+    return 'Sorry we do not deliver to that address'
 }
 
-console.log(canWeDeliverTwo(85209))
+console.log(canWeDeliverTwo(85213))
 
 
 //////////////////PROBLEM 3////////////////////

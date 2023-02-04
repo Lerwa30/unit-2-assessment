@@ -167,13 +167,15 @@ const foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter((food) => {
-    for(let i = 0; i < food.tags.length; i++){
-        if(food.tags[i] === 'salty') {
-            return true
-        }
-    }
-});
+// const filteredFood = foodArr.filter((food) => {
+//     for(let i = 0; i < food.tags.length; i++){
+//         if(food.tags[i] === 'salty') {
+//             return true
+//         }
+//     }
+// });
+
+const filteredFood = foodArr.filter((food) => food.tags.includes('salty'));
 console.log(filteredFood)
 
 
@@ -210,7 +212,7 @@ console.log(filteredFood)
         if it is, return objects whose value for the given
         property is greater than the `number` passed in
 
-        If the type isn't `below`, return objects whose
+        If the type is `below`, return objects whose
         value for the given property is less than the 
         `number` passed in
     
@@ -219,13 +221,8 @@ console.log(filteredFood)
 
 //CODE HERE
 
-const filterByProperty = foodArr.filter((property, num, type) => {
+const filterByProperty = foodArr.filter((prop, num, type) => {
     let filteredArr = [];
-    for(let i = 0; i < foodArr.length; i++) {
-        if(type === 'above') {
-            return filteredArr.push(property.num)
-        }
-    }
     
 })
 
