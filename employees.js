@@ -108,10 +108,10 @@ class Manager extends Employee {
 
         this.employees = employees;
         this.getEmployees = function(){
-            console.log(`${name} manages ${employees}`)
+            console.log(`${this.name} manages ${this.employees}`)
         }
         this.addEmployee = function(emp){
-            employees.push(emp);
+            this.employees.push(emp);
         }
     }
 }
